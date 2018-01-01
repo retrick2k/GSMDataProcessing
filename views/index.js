@@ -18,6 +18,7 @@ $(function () {
             },
             options: {
                 responsive: true,
+                borderColor: '#00e6e6',
                 maintainAspectRatio: false,
                 scales: {
                     yAxes: [{
