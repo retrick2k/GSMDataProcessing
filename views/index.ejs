@@ -8,18 +8,19 @@
 <body>
         <script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
         <script src="/scripts/Chart.js" charset="utf-8"></script>
-        <script src="/scripts/index.js" charset="utf-8"></script>
+        <script src="/scripts/index.js" charset="utf-8"></script>       
+        
+        <div style="width:400; height:300;">
+            <canvas id="temperatureChart" width="400px" height="400px">
+            </canvas>
+        </div>
+
         <div id="debug">
             <% for (var i = 0; i < data.length; i++) { %>
                 Time:
                 <%= data[i].time %>; data: <%= data[i].data %>;
                 </br>
             <% } %>
-        </div>
-        
-        <div style="width:400; height:300;">
-            <canvas id="temperatureChart" width="400px" height="400px">
-            </canvas>
         </div>
 </body>
 </html>
