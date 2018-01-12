@@ -26,10 +26,10 @@ app.get('/', (req, res) => {
     res.render('index.ejs', { data });
 });
 
-app.post('/save-temp', (req, res) => {
-    const temp = req.body.temp;
+app.get('/send-temp', (req, res) => {
+    const temp = req.param('t');
 
-    console.log(req.body.temp);
+    console.log('temp from request: ', temp);
 
     if (data.length === 20) {
         counter = 0;
